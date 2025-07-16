@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Meeting Minutes Transcriber</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="box">
+    <h2>Upload Voice & Get Meeting Minutes</h2>
+    <form id="uploadForm">
+      <input type="file" name="file" accept=".mp3,.wav,.ogg" required />
+      <textarea name="emails" placeholder="Enter emails, comma separated" required></textarea>
+      <button type="submit">Upload & Send</button>
+    </form>
+    <p id="response"></p>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
